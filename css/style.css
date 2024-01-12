@@ -960,8 +960,17 @@ footer {
 
 /* ---- About Page Product Quality Section ---- */
 
-.prdt-quality-sec .grid-column-two {
+.grid-column-products {
+	display: flex;
 	gap: 5rem;
+}
+
+.quality-content {
+	width: 55%;
+}
+
+.quality-vedieo {
+	width: 45%;
 }
 
 .quality-content .site-heading {
@@ -1007,7 +1016,7 @@ footer {
 }
 
 .customer-support h4 {
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 
 .vedeio-box {
@@ -1085,8 +1094,9 @@ footer {
 }
 
 .our-team-sec .client-box .our-usp-image {
-	height: auto;
+	height: 19rem;
 	width: 100%;
+	background: var(--color-paragraph);
 }
 
 .our-team-sec .client-box .our-usp-image img {
@@ -1097,4 +1107,9 @@ footer {
 
 .our-team-sec .client-box h3 {
 	margin-bottom: 0rem;
+}
+
+.our-team-sec .card {
+	padding: 0 0 1.5rem;
+	overflow: hidden;
 }
