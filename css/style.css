@@ -213,7 +213,7 @@ nav ul li a {
 
 .card {
 	background: var(--color-white);
-	box-shadow: 0 0 40px 5px #0000000d;
+	box-shadow: 0 0 5px 5px #0000000d;
 	padding: 1.5rem 1rem;
 	text-align: center;
 	border-radius: 0.8rem;
@@ -882,6 +882,7 @@ footer {
 	border-radius: 0.25rem;
 	border: 1px solid var(--color-border);
 	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
 }
 
 .form-box input::placeholder {
@@ -899,6 +900,7 @@ footer {
 	font-size: 1rem;
 	border-radius: 0.25rem;
 	width: 100%;
+	font-family: 'Poppins', sans-serif;
 }
 
 .conatct-textarea textarea::placeholder {
@@ -929,106 +931,170 @@ footer {
 }
 
 .about-image {
-	width: 100%;
-	height: auto;
+	height: 30rem;
 	margin: 0 auto;
-	border: 5px solid var(--color-brown);
-	padding: 0.8rem;
-	border-radius: 1rem;
-	position: relative;
-}
-
-.about-image img {
+	overflow: hidden;
 	border-radius: 0.5rem;
-}
-
-.quality-chocolate {
-	display: flex;
-	/* align-items: center; */
-	gap: 0.5rem;
-	position: absolute;
-	bottom: 13px;
-	right: -30px;
-	height: auto;
-	width: 13rem;
-	border-radius: 0.5rem;
-	padding: 1rem;
-	background: var(--color-black-300);
-	color: var(--color-white);
-}
-
-.quality-icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: var(--color-brown);
-	height: 3rem;
-	padding: 0 0.5rem;
-	border-radius: 0.25rem;
-}
-
-.quality-icon i {
-	font-size: 1.3rem;
-	color: var(--color-yellow-shade);
 }
 
 .about-page-container .site-heading {
 	text-align: left;
 }
 
-.about-page-container p {
+.about-page-container .site-heading h2 {
 	margin-bottom: 1rem;
 }
 
-.about-page-container ul {
-	margin-bottom: 1.5rem;
+.about-page-container p {
+	margin-bottom: 1rem;
+	color: var(--color-paragraph);
 }
 
-.about-page-container ul li {
-	margin-bottom: 0.5rem;
+.about-page-container p:last-child {
+	margin-bottom: 0;
 }
 
-.abt-page-btn {
+.abt-product-page-sec {
+	padding-top: 4rem;
+}
+
+/* ---- About Page Product Quality Section ---- */
+
+.prdt-quality-sec .grid-column-two {
+	gap: 5rem;
+}
+
+.quality-content .site-heading {
+	text-align: left;
+}
+
+.quality-content p {
+	color: var(--color-paragraph);
+	margin-bottom: 1rem;
+}
+
+.customer-support {
+	background: var(--color-yellow-shade);
+	border-radius: 1rem;
 	color: var(--color-white);
-	background: var(--color-brown);
-	transition: var(--transition);
+	position: relative;
+	padding: 1.5rem 5rem 1.5rem 2.5rem;
+	width: 30rem;
 }
 
-.abt-page-btn:hover {
-	background: var(--color-red-shade);
+.customer-support p {
+	color: var(--color-white);
+	font-size: 1.1rem;
 }
 
-.client-bg-color {
-	background: rgba(133, 1, 1, 0.836);
-	padding: 3rem 0;
-}
-
-.client-image {
+.phone-icon {
+	position: absolute;
+	top: 50%;
+	right: -38px;
+	height: 5rem;
+	width: 5rem;
+	border: 3px solid var(--color-white);
+	border-radius: 8rem;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	height: 120px;
-	width: 120px;
-	background: var(--color-brown);
+	align-items: center;
+	transform: translateY(-50%);
+	background: var(--color-yellow-shade);
+}
+
+.phone-icon i {
+	font-size: 1.3rem;
+}
+
+.customer-support h4 {
+	font-size: 1.8rem;
+}
+
+.vedeio-box {
+	position: relative;
+}
+
+.vedeio-box a {
+	display: block;
+}
+
+.vedeio-box img {
+	border-radius: 1rem;
+}
+
+.play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 3.5rem;
+	width: 3.5rem;
 	border-radius: 5rem;
-	border: 5px solid var(--color-white);
-	margin: 0 auto 1rem;
+	border: 3px solid var(--color-white);
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(-50%, -50%);
 }
 
-.client-image img {
-	width: 60%;
-}
-
-.content-counter {
-	text-align: center;
-}
-.num {
-	margin-bottom: 0.5rem;
-	font-size: 2.5rem;
-	font-weight: bold;
-}
-
-.clients-info {
+.play-icon i {
+	font-size: 1.5rem;
 	color: var(--color-white);
-	font-weight: 600;
+}
+
+/* ---- About Page Services Section ---- */
+
+.abt-page-service-sec .site-heading {
+	margin-bottom: 5rem;
+}
+
+.abt-page-service-sec .site-heading h2 {
+	margin-bottom: 0rem;
+}
+
+.abt-page-service-sec .site-heading p {
+	color: var(--color-paragraph);
+	max-width: 43rem;
+	margin: auto;
+}
+
+.client-box .our-usp-image {
+	height: auto;
+	width: 100%;
+}
+
+.client-box .our-usp-image img {
+	margin: auto;
+	border-radius: 8rem;
+}
+
+/* ---- About Page OUR Team Section ---- */
+
+.our-team-sec .site-heading {
+	margin-bottom: 5rem;
+}
+
+.our-team-sec .site-heading h2 {
+	margin-bottom: 0rem;
+}
+
+.our-team-sec .site-heading p {
+	color: var(--color-paragraph);
+	max-width: 43rem;
+	margin: auto;
+}
+
+.our-team-sec .client-box .our-usp-image {
+	height: auto;
+	width: 100%;
+}
+
+.our-team-sec .client-box .our-usp-image img {
+	margin: initial;
+	border-radius: initial;
+	width: 100%;
+}
+
+.our-team-sec .client-box h3 {
+	margin-bottom: 0rem;
 }
