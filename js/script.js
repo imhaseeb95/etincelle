@@ -73,6 +73,20 @@ $('.testimonial-slider').slick({
 });
 
 // ===============
+// 	Popup form
+// ===============
+
+$('#place-order').click(function(){
+    $('.overlay').fadeIn();
+    $('body').addClass('bodyOverflow')
+  })
+  $('.closBtn').click(function(){
+    $('.overlay').fadeOut();
+    $('body').removeClass('bodyOverflow')
+  })
+
+
+// ===============
 // 	Fancy Box
 // ===============
 
@@ -193,6 +207,7 @@ window.addEventListener('scroll', function(){
 
 const tabBtn = document.querySelectorAll(".tab-btn");
 const tabContent = document.querySelectorAll(".tab-content-container");
+
 
 tabBtn.forEach((tab, index)=>{
 	tab.addEventListener("click", ()=>{

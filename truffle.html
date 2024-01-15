@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Detail page</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/e088578515.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+	</head>
+	<body>
+		<!-- Place order Section -->
+
+		<div class="overlay">
+			<div class="formBox">
+				<div class="st-title">Enquire Now</div>
+				<di class="closBtn"
+					><i class="fa-solid fa-xmark" aria-hidden="true"></i
+				></di>
+				<form
+					class="form-box1"
+					id="enquiryForm"
+					target="_blank"
+					action="https://formsubmit.co/el/nodeva"
+					method="POST"
+					novalidate="novalidate"
+				>
+					<div>
+						<label for="enq_name"></label>
+						<input
+							type="text"
+							name="enq_name"
+							placeholder="Name"
+							id="enq_name"
+							required=""
+							autocomplete="off"
+							aria-required="true"
+						/>
+					</div>
+					<div>
+						<label for="enq_email"></label>
+						<input
+							type="email"
+							name="enq_email"
+							placeholder="Email"
+							id="enq_email"
+							required=""
+							autocomplete="off"
+							aria-required="true"
+						/>
+					</div>
+					<div>
+						<label for="enq_phone"></label>
+						<input
+							type="text"
+							name="enq_phone"
+							placeholder="Mobile No."
+							id="enq_phone"
+							required=""
+							autocomplete="off"
+							aria-required="true"
+						/>
+					</div>
+					<div>
+						<label for="enq_message"></label>
+						<textarea
+							name="enq_message"
+							id="enq_message"
+							cols="10"
+							rows="3"
+							placeholder="Message"
+							required=""
+							autocomplete="off"
+							minlength="5"
+							aria-required="true"
+						></textarea>
+					</div>
+					<div>
+						<input
+							type="button"
+							name="submit"
+							id="submitEnq"
+							class="btn send-btn"
+							value="send message"
+						/>
+					</div>
+					<div id="enq_form_message"></div>
+				</form>
+			</div>
+		</div>
+		<!-- Header Section -->
+
+		<header>
+			<div class="container">
+				<div class="header-main-container">
+					<div class="logo-container">
+						<a href="index.html" class="logo"
+							><img src="./img/logo.jpg" alt=""
+						/></a>
+					</div>
+					<div class="header-links-conatiner">
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="#">Chocolates</a></li>
+								<li><a href="#">Stores</a></li>
+								<li><a href="#">Become Partner</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						<a href="tel:+91 8130505609" class="get-in-touch"
+							><i class="fa-solid fa-phone-volume"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Details Banner Section -->
+
+		<section class="inner-banner-image detail-sec">
+			<div class="bg-bg-color">
+				<div class="container">
+					<div class="inner-banner-content">
+						<h5>Trauffle with Vanila</h5>
+						<div class="beadcrums">
+							<ul>
+								<li><a href="index.html">Home >></a></li>
+								<li><a href="index.html#product-list">Chocolates >></a></li>
+								<li>Trauffle with Vanila</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Details Cholcolate Section -->
+		<section class="section details-chocolate-sec">
+			<div class="container">
+				<div class="grid-column-two">
+					<div class="details-chocolate-image">
+						<div class="choloate-image-container">
+							<img src="./img/Product2.png" alt="details chocolate image" />
+						</div>
+					</div>
+					<div class="details-chocolate-content">
+						<div class="chocolate-content-container">
+							<div class="chocolate-name">
+								<h2>Trauffle with Vanila</h2>
+								<span>Price: Rs 13.35</span>
+							</div>
+							<p>
+								Main types of chocolate Chocolate is a food made from the fruit
+								of the cocoa tree. Chocolate is the basic ingredient in many
+								kinds of candy, chocolate candies, ice cream, cookies, cakes,
+								etc. Chocolate flavor is one of the most popular flavors. most
+								favorite in the world. Chocolate is also...Chocolate flavor is
+								one of the most popular flavors. most favorite in the world.
+							</p>
+							<div class="special-offer-conatiner">
+								<div class="special-offer">
+									<span>Special Offer</span>
+								</div>
+								<ul>
+									<li>In Stock</li>
+									<li>Free Delivery Available*</li>
+									<li>Sale 30% Off Use Code: Deal30</li>
+								</ul>
+							</div>
+							<div class="placeholder">
+								<span class="in-stock">Available in Stock</span>
+								<button class="btn order-btn" id="place-order">
+									PLACE ORDER
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Order Info Section -->
+
+				<div class="order-info">
+					<div class="grid-column-four">
+						<div class="order-box">
+							<div class="oder-image">
+								<img src="./img/order1.svg" alt="order image" />
+							</div>
+							<p>WORLDWIDE SHIPPING</p>
+						</div>
+						<div class="order-box">
+							<div class="oder-image">
+								<img src="./img/order2.svg" alt="order image" />
+							</div>
+							<p>WORLDWIDE SHIPPING</p>
+						</div>
+						<div class="order-box">
+							<div class="oder-image">
+								<div class="confirm-image">
+									<img src="./img/order3.svg" alt="order image" />
+									<div class="check-image">
+										<img src="./img/order4.svg" alt="order image" />
+									</div>
+								</div>
+							</div>
+							<p>WORLDWIDE SHIPPING</p>
+						</div>
+						<div class="order-box">
+							<div class="oder-image">
+								<img src="./img/order5.svg" alt="order image" />
+							</div>
+							<p>WORLDWIDE SHIPPING</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Tabers Cholcolate Information  Section -->
+		<section class="section-pad tabers-sec">
+			<div class="taber-btn-container">
+				<button class="tab-btn active">DESCRIPTION</button>
+				<button class="tab-btn">ADDITIONAL INFORMATION</button>
+			</div>
+			<div class="container">
+				<div class="content-box-container">
+					<div class="tab-content-container active">
+						<div class="tab-sub-content">
+							<div class="grid-column-two">
+								<div class="tab-image">
+									<img src="./img/tab1.svg" alt="Tab Iamge" />
+								</div>
+								<div class="tab-content-box">
+									<h5>Main Types Of Chocolate</h5>
+									<p>
+										Chocolate is a food made from the fruit of the cocoa tree.
+										Chocolate is the basic ingredient in many kinds of candy,
+										chocolate candies, ice cream, cookies, cakes, etc. Chocolate
+										flavor is one of the most popular flavors. most favorite in
+										the world.
+									</p>
+									<p>
+										Chocolate is also made into different shapes, from people,
+										animals, objects to celebrate different events such as
+										rabbits or eggs for Easter, Santa Claus for the day.
+										Christmas and heart shape for Valentine's day.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-sub-content">
+							<div class="grid-column-two">
+								<div class="tab-content-box">
+									<h5>Main Types Of Chocolate</h5>
+									<p>
+										Chocolate is a food made from the fruit of the cocoa tree.
+										Chocolate is the basic ingredient in many kinds of candy,
+										chocolate candies, ice cream, cookies, cakes, etc. Chocolate
+										flavor is one of the most popular flavors. most favorite in
+										the world.
+									</p>
+									<p>
+										Chocolate is also made into different shapes, from people,
+										animals, objects to celebrate different events such as
+										rabbits or eggs for Easter, Santa Claus for the day.
+										Christmas and heart shape for Valentine's day.
+									</p>
+								</div>
+								<div class="tab-image">
+									<img src="./img/tab2.svg" alt="Tab Iamge" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-content-container">
+						<div class="more-information-container">
+							<div class="site-heading">
+								<span class="site-title-tagline">MORE INFOMATION TO YOU</span>
+								<h2>Things You Need To Know</h2>
+							</div>
+							<div class="need-more-main-container">
+								<div class="flex-column-two">
+									<div class="need-more-content-box">
+										<div class="grid-column-two">
+											<div class="need-more-content">
+												<p>
+													We use industry standard SSL encryption to protect
+													your details. Potentially sensitive information such
+													as your name, address and card details are encoded so
+													they can only be read on the secure server.
+												</p>
+												<ul>
+													<li>Safe Payments</li>
+													<li>Accept Credit Cart</li>
+													<li>Different Payment Method</li>
+													<li>Price Include VAT</li>
+													<li>Easy To Order</li>
+												</ul>
+											</div>
+
+											<div class="delivery-main-container">
+												<div class="delivery-content-box">
+													<h4>Express Delivery</h4>
+													<ul>
+														<li>Across city within 2-4 days</li>
+														<li>Across Country within 3-7 days</li>
+														<li>Selected locations</li>
+													</ul>
+												</div>
+												<div class="delivery-more-info-box">
+													<h4>Need More Information</h4>
+													<ul>
+														<li>Orders & Shipping</li>
+														<li>Returns & Refunds</li>
+														<li>Payments</li>
+														<li>Your Orders</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="need-more-image-container">
+										<div class="need-more-image"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+
+		<footer>
+			<div class="footer-main-container">
+				<div class="container">
+					<div class="footer-info-conatiner">
+						<div class="company-info">
+							<div class="ft-logo">
+								<a href="#"><img src="./img/ft-logo.jpg" alt="" /></a>
+							</div>
+							<ul>
+								<li>
+									<a href="#">
+										<span><i class="fa-solid fa-location-dot"></i></span>
+										123, Main Street, Near ABC Farm, Noida, Uttar Pradesh -
+										000000
+									</a>
+								</li>
+								<li>
+									<a href="#"
+										><span><i class="fa-solid fa-phone-volume"></i></span> +91
+										0000 00000</a
+									>
+								</li>
+								<li>
+									<a href="#"
+										><span><i class="fa-solid fa-envelope"></i></span>
+										info@entechellechocolate.com</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ft-links">
+							<h3>Quick Links</h3>
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Our Team</a></li>
+							</ul>
+						</div>
+
+						<div class="ft-links">
+							<h3>Support Center</h3>
+							<ul>
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">FAQ's</a></li>
+								<li><a href="#">Booking Tips</a></li>
+								<li><a href="#">Live Chat</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div class="ft-links">
+							<h3>Subscribe Now</h3>
+							<p>Subscribe Our Newsletter To Get Latest Update And News</p>
+							<input type="text" placeholder="Your Mail" />
+							<button type="submit" class="subscribe-btn">Subscribe Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copy-right-container">
+				<div class="container">
+					<div class="copy-right-box">
+						<p>&#169; COPYRIGHT 2023 ENTCHELLECHOCOLATE All Rights Reserved.</p>
+						<div class="social-links">
+							<ul>
+								<li>
+									<a href="#"
+										><i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="fa fa-whatsapp" aria-hidden="true"></i
+									></a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="fa fa-instagram" aria-hidden="true"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
