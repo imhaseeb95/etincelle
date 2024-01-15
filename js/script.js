@@ -156,17 +156,14 @@ var heightCounter = 1940;
 const clientsCounter = document.querySelectorAll('.counter')
 const speedTime = 20;
 
-const scrollHeight = document.querySelector('.clients-sec');
-const scrollTopHeight = 900 
-console.log(scrollTopHeight);
-
-
-
+let scrollHeight = document.querySelector('.clients-sec');
+let scrollTopHeight = 500
 
 window.addEventListener('scroll', function(){
   let topScroll = window.scrollY;
+  
 
-  if(topScroll > scrollTopHeight){
+  if(topScroll < scrollTopHeight){
     clientsCounter.forEach((element)=>{
       element.innerText = '0';
     
@@ -187,4 +184,23 @@ window.addEventListener('scroll', function(){
   }
 
 
+})
+
+
+// ========================
+// 	Tabers
+// ========================
+
+const tabBtn = document.querySelectorAll(".tab-btn");
+const tabContent = document.querySelectorAll(".tab-content-container");
+
+tabBtn.forEach((tab, index)=>{
+	tab.addEventListener("click", ()=>{
+		tabBtn.forEach((tab)=>{tab.classList.remove("active")});
+		tab.classList.add("active");
+
+
+		tabContent.forEach((content)=>{content.classList.remove("active")});
+		tabContent[index].classList.add("active");
+	});
 })
