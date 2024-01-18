@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>About</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet"
@@ -44,27 +45,35 @@
 		<!-- Header Section -->
 
 		<header>
+			<div class="header-overlay"></div>
 			<div class="container">
 				<div class="header-main-container">
 					<div class="logo-container">
 						<a href="index.html" class="logo"
-							><img src="./img/logo.jpg" alt=""
+							><img src="./img/Logo.svg" alt="Logo"
 						/></a>
 					</div>
 					<div class="header-links-conatiner">
 						<nav>
-							<ul>
+							<ul class="small-screen">
+								<div class="close">
+									<i class="fa-solid fa-xmark"></i>
+								</div>
 								<li><a href="index.html">Home</a></li>
 								<li><a href="about.html">About</a></li>
-								<li><a href="#">Chocolates</a></li>
+								<li><a href="index.html#product-list">Chocolates</a></li>
 								<li><a href="#">Stores</a></li>
-								<li><a href="#">Become Partner</a></li>
+								<li><a href="partners.html">Become Partner</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</nav>
 						<a href="tel:+91 8130505609" class="get-in-touch"
 							><i class="fa-solid fa-phone-volume"></i
 						></a>
+
+						<div class="menu-bars material-symbols-outlined">
+							<i class="fa-solid fa-bars"></i>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -72,7 +81,7 @@
 
 		<!-- About Banner Section -->
 
-		<section class="inner-banner-image contact-sec">
+		<section class="inner-banner-image contact-sec mr-top">
 			<div class="bg-bg-color">
 				<div class="container">
 					<div class="inner-banner-content">
@@ -129,7 +138,7 @@
 
 			<!-- About Page Product Section -->
 
-			<div class="abt-product-page-sec">
+			<!-- <div class="abt-product-page-sec">
 				<div class="products">
 					<div class="container">
 						<div class="products-category-container">
@@ -162,7 +171,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
 
 		<!-- About Page Product Quality Section -->
@@ -326,7 +335,7 @@
 					<div class="footer-info-conatiner">
 						<div class="company-info">
 							<div class="ft-logo">
-								<a href="#"><img src="./img/ft-logo.jpg" alt="" /></a>
+								<a href="#"><img src="./img/logo_white.svg" alt="ft-logo" /></a>
 							</div>
 							<ul>
 								<li>
