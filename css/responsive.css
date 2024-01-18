@@ -378,11 +378,12 @@
 @media only screen and (max-width: 375px) {
 	.partner-sub-content-box .grid-column-two {
 		grid-template-columns: repeat(1, 1fr);
-		gap: 2rem;
+		gap: 0rem;
 	}
 
 	.benefits-sec .benefit-sub-content-box .grid-column-two {
 		grid-template-columns: repeat(1, 1fr);
+		gap: 1.2rem;
 	}
 	.partner-btn {
 		padding: 1rem 1.8rem;
