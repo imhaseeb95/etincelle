@@ -22,19 +22,20 @@ $('.sweets-slider').slick({
 			},
 		},
 		{
-			breakpoint: 600,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2,
-			},
-		},
-		{
-			breakpoint: 480,
+			breakpoint: 767,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				infinite: true,
 			},
 		},
+		// {
+		// 	breakpoint: 480,
+		// 	settings: {
+		// 		slidesToShow: 1,
+		// 		slidesToScroll: 1,
+		// 	},
+		// },
 	],
 });
 
@@ -56,10 +57,10 @@ $('.testimonial-slider').slick({
 			},
 		},
 		{
-			breakpoint: 600,
+			breakpoint: 767,
 			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2,
+				slidesToShow: 1,
+				slidesToScroll: 1,
 			},
 		},
 		{
@@ -108,18 +109,47 @@ for (let i = 0; i < accordian.length; i++) {
 // 	Header
 // ===============
 
-// var navBar = document.querySelector("header");
+var navBar = document.querySelector("header");
 // var headerScroll = document.querySelector("header.sec-header");
-// var headerY = 100;
+var headerY = 50;
 
-// window.addEventListener("scroll", function () {
-//   var haederTop = window.scrollY;
-//   if (haederTop > headerY) {
-//     headerScroll.classList.add("nav-bar-active");
-//   } else {
-//     headerScroll.classList.remove("nav-bar-active");
-//   }
-// });
+window.addEventListener("scroll", function () {
+  var haederTop = window.scrollY;
+  if (haederTop > headerY) {
+    navBar.classList.add("active");
+  } else {
+    navBar.classList.remove("active");
+  }
+});
+
+
+// ====================
+// 	Small scren Menu
+// ====================
+
+var menuBar = document.querySelector(".menu-bars");
+var showMenu = document.querySelector("nav ul");
+var closeMenu = document.querySelector(".close");
+var headerOverlay = document.querySelector('.header-overlay')
+
+menuBar.addEventListener("click", ()=>{
+	showMenu.classList.add("active");
+	headerOverlay.classList.add("active");
+})
+
+closeMenu.addEventListener("click", ()=>{
+	showMenu.classList.remove("active");
+	headerOverlay.classList.remove("active");
+})
+
+headerOverlay.addEventListener("click", ()=>{
+	showMenu.classList.remove("active");
+	headerOverlay.classList.remove("active");
+})
+
+
+
+
 
 // ========================
 // 	Home counter Scroll
@@ -218,4 +248,11 @@ tabBtn.forEach((tab, index)=>{
 		tabContent.forEach((content)=>{content.classList.remove("active")});
 		tabContent[index].classList.add("active");
 	});
+})
+
+
+var sweetsBtn = document.querySelector(".btn-sweets");
+sweetsBtn.addEventListener("click", ()=>{
+	showMenu.classList.remove("active");
+	headerOverlay.classList.remove("active");
 })
