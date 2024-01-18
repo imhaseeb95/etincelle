@@ -373,6 +373,15 @@
 	.form-box .grid-column-two {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.partner-sub-content-box .grid-column-two {
+		gap: 0rem;
+	}
+	.partner-sub-content-box .grid-column-two {
+		gap: 0.2rem;
+	}
+	.partner-content-box ul li {
+		align-items: baseline;
+	}
 }
 
 @media only screen and (max-width: 375px) {
