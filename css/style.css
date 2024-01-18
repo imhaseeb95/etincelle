@@ -65,7 +65,8 @@ h2 {
 input {
 	display: block;
 	width: 100%;
-	padding: 0.85rem;
+	height: 3rem;
+	padding: 0 0.85rem;
 	border-radius: 0.25rem;
 	border: 1px solid var(--color-border);
 	font-size: 1rem;
@@ -140,7 +141,7 @@ textarea {
 .inner-banner-image {
 	background: url('../img/image_about.png') no-repeat center center;
 	background-size: cover;
-	padding: 10rem 0 10rem;
+	padding: 10rem 0;
 }
 
 .inner-banner-content h5 {
@@ -163,10 +164,25 @@ textarea {
 	align-items: center;
 }
 
+.detail-sec .bg-bg-color {
+	justify-content: center;
+}
+
 /* ---- Header Section ---- */
 
 header {
-	box-shadow: 0 0 5px var(--color-gray-100);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: var(--color-white);
+	z-index: 99;
+	transition: var(--transition);
+}
+
+header.active {
+	box-shadow: 0 0 15px var(--color-gray-100);
+	/* border: 1px solid var(--color-border); */
 }
 
 .header-main-container {
@@ -208,12 +224,24 @@ nav ul li a {
 	font-size: 1rem;
 }
 
+.menu-bars {
+	display: none;
+}
+
+.close {
+	display: none;
+}
+
+.header-overlay {
+	display: none;
+}
+
 /* ---- Hero Section ---- */
 
 .bg-image {
-	background: url('../img/banner_top.png') no-repeat;
-	background-size: 100%;
-	height: 100vh;
+	background: url('../img/banner_top.png') no-repeat center center;
+	background-size: cover;
+	/* height: 100vh; */
 }
 
 .hero-content-box {
@@ -471,7 +499,6 @@ nav ul li a {
 
 .accordian {
 	margin-bottom: 1.5rem;
-	padding-left: 1.5rem;
 }
 
 .accordian .contentBx {
@@ -913,7 +940,8 @@ footer {
 .form-box input {
 	display: block;
 	width: 100%;
-	padding: 0.85rem;
+	height: 3rem;
+	padding: 0 0.85rem;
 	border-radius: 0.25rem;
 	border: 1px solid var(--color-border);
 	font-size: 1rem;
@@ -1261,10 +1289,13 @@ footer {
 	font-family: 'Poppins', sans-serif;
 	cursor: pointer;
 }
+.order-info {
+	margin-top: 5rem;
+}
 
 .order-box {
 	text-align: center;
-	margin-top: 5rem;
+
 	border: 1px solid var(--color-border);
 	padding: 1rem;
 }
@@ -1279,7 +1310,7 @@ footer {
 }
 
 .oder-image img {
-	width: 20%;
+	width: 2.5rem;
 	margin: auto;
 }
 
@@ -1288,13 +1319,22 @@ footer {
 	z-index: 2;
 }
 
+.confirm-image img {
+	width: 3.5rem;
+	/* margin: auto; */
+}
+
 .check-image {
 	position: absolute;
-	top: 11px;
-	left: 55px;
-	height: 5rem;
-	width: 5rem;
+	top: 6px;
+	left: 83px;
+	height: 2rem;
+	width: 2rem;
 	z-index: -1;
+}
+
+.check-image img {
+	width: 1rem;
 }
 
 /* ---- More Information About Product Section ---- */
@@ -1548,4 +1588,125 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+}
+
+/* ---- Become Partner Page ---- */
+
+/* ---- Partner inner Banner Section ---- */
+
+.parner-sec .inner-banner-content p {
+	color: var(--color-white);
+	max-width: 30rem;
+}
+
+/* ---- Partner Section ---- */
+
+.brach-partner-sec .grid-column-two {
+	gap: 5rem;
+}
+
+.partner-content-container .site-heading {
+	text-align: left;
+}
+
+.partner-content-container .site-heading h2 {
+	margin-bottom: 0.5rem;
+}
+
+.partner-sub-content-box p {
+	color: var(--color-paragraph);
+	margin-bottom: 1rem;
+}
+
+.partner-content-box ul li {
+	color: var(--color-paragraph);
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.partner-content-box ul li i {
+	color: var(--color-red-shade);
+}
+
+.brach-one-image {
+	position: relative;
+}
+
+/* .brach-one-image img {
+	width: 85%;
+} */
+
+.branch-two-image {
+	position: absolute;
+	bottom: -14rem;
+	right: -7rem;
+}
+
+.partner-btn {
+	background: var(--color-button);
+	border-radius: 0.5rem;
+	padding: 1.2rem 4rem;
+	color: var(--color-white);
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+	transition: var(--transition);
+	display: block;
+	margin-top: 1rem;
+}
+
+.partner-btn:hover {
+	background: var(--color-red-shade);
+}
+
+/* ---- Partners Benfits Section ---- */
+
+.benefits-sec .grid-column-two {
+	gap: 3rem;
+	align-items: center;
+}
+
+.benefits-content-container .site-heading {
+	text-align: left;
+}
+
+.benefits-content-container p {
+	color: var(--color-paragraph);
+	margin-bottom: 1rem;
+}
+
+.benefit-content-image {
+	width: 3rem;
+	height: 3rem;
+}
+
+.benefit-content-image img {
+	height: 3rem;
+}
+
+.benefit-content-image {
+	margin-bottom: 1rem;
+}
+
+.benefit-content-box h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+/* --- Partners Form Section --- */
+
+.partner-form-container {
+	max-width: 50rem;
+	margin: auto;
+}
+
+.partner-form-container .form-box {
+	margin-bottom: 1.8rem;
+}
+
+.form-box label {
+	display: block;
+	margin-bottom: 0.5rem;
 }
