@@ -1324,10 +1324,10 @@ footer {
 	z-index: 2;
 }
 
-.confirm-image img {
+/* .confirm-image img {
 	width: 3.5rem;
 	/* margin: auto; */
-}
+} */
 
 .check-image {
 	position: absolute;
